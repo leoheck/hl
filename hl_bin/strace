@@ -29,8 +29,8 @@ progname="$(basename $0)"
 pathname="$(type -p "$progname")"
 dirname="$(dirname "$pathname")"
 
-PATH="$(echo "$PATH" | sed "s|^$dirname:||;s|:$dirname:|:|g")"
-export PATH
+# PATH="$(echo "$PATH" | sed "s|^$dirname:||;s|:$dirname:|:|g")"
+# export PATH
 
 if [ "$WHICH" = 1 ]; then
 	type "$progname"

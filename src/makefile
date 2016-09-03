@@ -19,7 +19,10 @@ clean:
 	@ rm -f $(bin)
 
 
+uninstall:
+	rm -f /usr/bin/$(bin)
+	rm -f /etc/default/hl
+
 install:
-	cp  -f hl /usr/bin
-	rm -rf /etc/default/hl
-	cp -r ../config_files /etc/default/hl
+	cp -f $(bin) /usr/bin/$(bin)
+	cp -f ../config_files/hl /etc/default/hl
