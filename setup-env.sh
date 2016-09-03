@@ -1,11 +1,9 @@
 #!/bin/bash
 
-dir=$(dirname $0)
+# dir=$(dirname $0)
+dir=$(pwd)
 
-export PATH=$dir/bin/1.62/i686/centos/5.5/:$PATH
-export PATH=$dir/hl_bin/:$PATH
-export PATH=$dir/quality/:$PATH
-export PATH=$dir/scripts/:$PATH
+export PATH=$dir/src:$PATH
+export MANPATH=$dir/man:$MANPATH
 
-export MANPATH=$dir:$MANPATH
-
+# export PATH=$dir/hl_bin/:$PATH

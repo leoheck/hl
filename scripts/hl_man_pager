@@ -1,3 +1,4 @@
 #!/bin/bash
 
-/usr/local/bin/hl --man | more
+#/usr/local/bin/hl --man | more
+hl --man | more

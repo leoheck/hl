@@ -496,7 +496,8 @@ void cr_add_to_list(struct cr_re_desc *re)
                          CR_CLEAR_MARKER_FLAGS
 
 ******************************************************************************/
-inline void cr_clear_marker_flags(void)
+// inline
+void cr_clear_marker_flags(void)
 {
      G.begin_specified        = FALSE;
      G.end_specified          = FALSE;
@@ -1320,7 +1321,8 @@ void cr_init_desc(void)
                          CR_SAME_COLORS
 
 ******************************************************************************/
-inline bool cr_same_colors(struct cr_color *col1, struct cr_color *col2)
+// inline
+bool cr_same_colors(struct cr_color *col1, struct cr_color *col2)
 {
      return (col1->col_num   == col2->col_num)
          && (col1->intensity == col2->intensity);
