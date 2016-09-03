@@ -1,6 +1,5 @@
 
-
-# Hilight (hl) command
+# Highlight (hl) command
 
 This command uses regcomp() and regexec() to colorize (highlight)
 strings from stdin using options on the command line.
