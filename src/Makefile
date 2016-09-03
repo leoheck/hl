@@ -1,3 +1,4 @@
+
 #
 #	Makefile
 #
@@ -13,3 +14,6 @@ aix_hl	: cr_main.o cr_gpri.o cr_lex.o
 		@ $(AIX_CC) -o hl cr_main.o cr_gpri.o cr_lex.o
 		@ strip hl
 		-@ ./hl -V || :
+
+clean:
+	@ rm -rf *.o
